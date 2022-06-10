@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  background: rgb(34, 33, 33);
+  min-height: 729px;
+  background-size: cover;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 91px;
+  color: white;
+}
+
+.navbar-left {
+  display: flex;
+}
+
+.navbar-left__name {
+  margin-right: 20px;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.navbar-left__contact-details {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;  
+  align-items: center;
+
+}
+
+.navbar-left__contact {
+  list-style-type: none;
+  margin-right: 7px;
+  letter-spacing: 0.5px;
+}
+
+.navbar-right__list {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.navbar-right__item {
+  margin-right: 21px;
+  list-style-type: none;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.row__title {
+  color: white;
+  font-size: 90px; 
+  margin-top: 80px;
+  margin-bottom: 150px;
+  letter-spacing: 3px;
+  margin-left: 40px;
+}
+
+.row__howdy {
+  color: rgb(204, 43, 70);
+}
+
+.footer__media {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+  align-items: flex-end;
+}
+
+.footer__item {
+  list-style-type: none;
+  cursor: pointer;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: 4;
+  animation-name: ball-move;
+  animation-direction: alternate;
+}
+
+.footer__item svg {
+  fill: white;
+}
+
+.footer__item svg:hover {
+  fill: rgb(204, 43, 70);
+}
+
+.footer__item:nth-child(1) {
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-name: inst-icon-change;
+}
+
+.footer__item:nth-child(1) {
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-name: inst-icon-change;
+}
+
+.footer__item:nth-child(2) {
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-name: fb-icon-change;
+}
+
+.footer__item:nth-child(3) {
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-name: gmail-icon-change;
+}
+
+.footer__item:nth-child(4) {
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-name: li-icon-change;
+}
+
+/* @keyframes inst-icon-change {
+  from {
+    
+  }
+  to {
+    left: 10px;
+  }
+} */
+
+.ball-1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  left: 400px;
+  bottom: 100px;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: 4;
+  animation-name: ball-move;
+  animation-direction: alternate;
+}
+
+@keyframes ball-move {
+  from {
+    left: 400px;
+  }
+  to {
+    left: 10px;
+  }
+}
+
+@keyframes desk-move {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(15deg);
+  }
+}
